@@ -1,0 +1,17 @@
+<h2>Form</h2>
+
+<form [formGroup]="form" (ngSubmit)="process()">
+  <table>
+    <tr>
+      <td>Name: </td>
+      <td><input type="text" placeholder="Your name" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Email: </td>
+      <td><input type="email" placeholder="Your name" formControlName="email"></td>
+    </tr>
+    <tr>
+      <td><button type="submit">Submit</button></td>
+    </tr>
+  </table>
+</form>
